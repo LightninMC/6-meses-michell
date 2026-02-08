@@ -6,9 +6,9 @@
     <title>Para Michell Abigail - 6 Meses</title>
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Fuentes: Una elegante para leer, una manual para títulos, una retro para el código -->
+    <!-- Fuentes -->
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=VT323&display=swap" rel="stylesheet">
-    <!-- Librería de Animaciones al hacer scroll -->
+    <!-- Librería de Animaciones -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     
@@ -33,11 +33,12 @@
             padding: 12px 12px 40px 12px;
             box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
             transition: all 0.4s ease;
-            position: relative;
+            /* Importante: permite que z-index funcione mejor */
+            z-index: 10; 
         }
         .polaroid:hover {
             transform: scale(1.02) rotate(0deg) !important;
-            z-index: 20;
+            z-index: 50 !important; /* Asegura que al pasar el mouse quede arriba de todo */
             box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2);
         }
         .polaroid img {
@@ -95,7 +96,7 @@
                 "Felices 6 meses, mi vida. Sé que las palabras a veces me faltan, pero hoy quiero intentar que sobren."
             </p>
 
-            <!-- REPRODUCTOR DE YOUTUBE (PARA ESCUCHAR LA CANCIÓN COMPLETA) -->
+            <!-- REPRODUCTOR DE YOUTUBE -->
             <div class="w-full max-w-sm mx-auto shadow-2xl rounded-xl overflow-hidden transform hover:scale-105 transition duration-300 bg-black">
                 <iframe width="100%" height="200" src="https://www.youtube.com/embed/Db27qvNShUc" title="Apocalypse - Cigarettes After Sex" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
@@ -107,10 +108,10 @@
         </div>
     </section>
 
-    <!-- CAPÍTULO 1: LA CERTEZA -->
+    <!-- CAPÍTULO 1: LA CERTEZA (CORREGIDO PARA MÓVIL) -->
     <section class="min-h-screen flex flex-col lg:flex-row items-center justify-center p-8 lg:p-20 bg-white">
         <!-- Texto -->
-        <div class="lg:w-1/2 lg:pr-12 order-2 lg:order-1" data-aos="fade-right">
+        <div class="lg:w-1/2 lg:pr-12 order-2 lg:order-1 mt-8 lg:mt-0" data-aos="fade-right">
             <h3 class="text-3xl md:text-4xl handwritten text-stone-800 mb-6">1. La verdad tras mi risa</h3>
             <div class="text-reading text-lg text-stone-600 leading-loose space-y-4">
                 <p>
@@ -122,10 +123,10 @@
             </div>
         </div>
         
-        <!-- Galería Visual -->
-        <div class="lg:w-1/2 order-1 lg:order-2 relative h-[400px] w-full mb-10 lg:mb-0" data-aos="fade-left">
-            <!-- FOTO 1: Nosotros (Actualizada) -->
-            <div class="polaroid absolute top-0 left-10 rotate-[-6deg] z-10 w-64">
+        <!-- Galería Visual (CORREGIDA: Relative en móvil, Absolute en PC) -->
+        <div class="lg:w-1/2 order-1 lg:order-2 w-full flex flex-col items-center lg:block relative min-h-[500px] lg:h-[500px]" data-aos="fade-left">
+            <!-- FOTO 1: Nosotros -->
+            <div class="polaroid relative lg:absolute lg:top-0 lg:left-10 rotate-[-2deg] lg:rotate-[-6deg] z-20 w-72 lg:w-80 mb-6 lg:mb-0">
                 <img src="https://lh3.googleusercontent.com/pw/AP1GczPMHFI9fC2_NGHxFKraB2Mk9HHEm8C78Qlj5n0Vic5ahwKg1LAgpA6-OH0klyxepNXcLbkiNuwxwBNXKTfYbAxZhwGIp6t4ZYSG90nptzW7TCjuFFDznxcUrUzMxISv4t8t8Y8CCOZZ5Tl2nYupGTG_zQ=w1873-h875-s-no-gm?authuser=0" alt="Nosotros">
                 <p class="handwritten text-center text-xl mt-3 text-gray-500">Mi única certeza</p>
                 <p class="text-[10px] text-center mt-2 text-stone-400 italic leading-tight">
@@ -134,7 +135,7 @@
                 </p>
             </div>
             <!-- FOTO 2: Tu sonrisa -->
-            <div class="polaroid absolute top-12 right-10 rotate-[4deg] z-0 w-60">
+            <div class="polaroid relative lg:absolute lg:top-40 lg:right-10 rotate-[2deg] lg:rotate-[4deg] z-10 w-64 lg:w-72">
                 <img src="https://lh3.googleusercontent.com/pw/AP1GczOj1JaFD3FMOCWaJg2Fnp9Dn1Ksw3hy27uLo1ZLr4oISkufvgkLCv1QXo0xvcRTTCinRB6YvDuMKOYhv0p5je5dBDQIyHQFjc8VULTulnu_yLNXtUKt6twY1qmaMqRGNiZrBkKYiMmEEnpuqIjkOS00rw=w518-h920-s-no-gm?authuser=0" alt="Tu sonrisa">
                 <p class="handwritten text-center text-xl mt-3 text-gray-500">Tu sonrisa</p>
             </div>
@@ -162,7 +163,7 @@
         </div>
     </section>
 
-    <!-- CAPÍTULO 3: TERMINAL DEL AMOR (ASCII MEJORADO) -->
+    <!-- CAPÍTULO 3: TERMINAL DEL AMOR -->
     <section class="h-screen w-full bg-[#000020] flex flex-col items-center justify-center relative overflow-hidden retro-font">
         <!-- Overlay de scanlines -->
         <div class="absolute inset-0 z-10 pointer-events-none opacity-20" style="background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06)); background-size: 100% 2px, 3px 100%;"></div>
@@ -194,8 +195,8 @@
     </section>
 
     <!-- CAPÍTULO 4: CRECIMIENTO -->
-    <section class="min-h-screen flex flex-col md:flex-row items-center justify-between p-8 lg:p-24 bg-[#f0fdf4]"> <!-- Verde muy suave -->
-        <div class="md:w-1/2 mb-10 md:mb-0" data-aos="fade-right">
+    <section class="min-h-screen flex flex-col lg:flex-row items-center justify-between p-8 lg:p-24 bg-[#f0fdf4]"> 
+        <div class="lg:w-1/2 mb-10 lg:mb-0" data-aos="fade-right">
             <!-- Foto Grande -->
             <div class="polaroid rotate-2 w-full max-w-md mx-auto">
                 <img src="https://lh3.googleusercontent.com/pw/AP1GczO2qTQER8LSEOAfn6j-M0TIpHbCpWF5Jn2KHnYvMUotYUvfL2gQqOK1dmCxmOviU-uplfy1oLU_tiBKK0s1eGhxYdrUaqoflzTX7AEkYUmObj2s_i0qEvHyCE9GbiOLhypMeTWYdckgRO1aGxlDWwQcXA=w1223-h920-s-no-gm?authuser=0" alt="Momentos de paz">
@@ -203,7 +204,7 @@
             </div>
         </div>
         
-        <div class="md:w-1/2 md:pl-12" data-aos="fade-left">
+        <div class="lg:w-1/2 lg:pl-12" data-aos="fade-left">
             <h3 class="text-4xl handwritten text-emerald-800 mb-6">Paciencia y Propósito</h3>
             <blockquote class="text-xl text-stone-600 italic border-l-4 border-emerald-400 pl-4 mb-6">
                 "Hay que saber tener paciencia cuando te estás convirtiendo en alguien que nunca antes has sido."
@@ -237,7 +238,7 @@
         </div>
     </section>
 
-    <!-- CAPÍTULO 6: CONSTELACIONES (Fondo Estrellas) -->
+    <!-- CAPÍTULO 6: CONSTELACIONES -->
     <section class="min-h-screen w-full starry-bg flex flex-col items-center justify-center text-white relative px-4">
         
         <div class="z-10 max-w-2xl text-center" data-aos="zoom-in-up" data-aos-duration="2000">
@@ -251,11 +252,9 @@
                 Hasta que vi tus hermosos lunares.
             </p>
             
-            <!-- Espacio para foto de ella si la tienes, o simplemente el texto -->
+            <!-- Foto de Constelaciones (Aumentada y responsiva) -->
             <div class="mt-12 flex justify-center">
-                 <!-- AUMENTADO: De w-48 a w-72 (móvil) y w-96 (PC) -->
                  <div class="polaroid rotate-3 w-72 md:w-96 opacity-90 hover:opacity-100 transition duration-500 hover:scale-105">
-                     <!-- Pon una foto de ella aquí -->
                     <img src="https://lh3.googleusercontent.com/pw/AP1GczO_ed5_Qk0Njk5eW-7v-Mm5Rnu3nV6mJDJJMAY5erS3Acln53tvZI0jGPxoiWmkInIdICXxBVmhACkNkp0-5I0QsAJZ70tKJem6nkA8NXdJJ0XI8f1xmT38N7X-KOqj0oS4WObR1HYhdVW_cIP7JXBroQ=w1223-h920-s-no-gm?authuser=0" alt="Mi universo">
                 </div>
             </div>
@@ -349,10 +348,7 @@
             }
         }
         
-        // Iniciar el efecto cuando el usuario llegue a esa sección (simulado con intersection observer o timeout simple)
-        // Para simplificar, lo iniciamos a los 2 segundos de carga o podrías usar un evento de scroll
         setTimeout(typeWriter, 2000);
-
 
         // 3. Contador de Tiempo Exacto
         // Fecha de inicio: 8 de Agosto 2025
@@ -372,7 +368,7 @@
             const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
             const seconds = Math.floor((diff % (1000 * 60)) / 1000);
             
-            // Calculo simple de meses (aproximación)
+            // Calculo simple de meses
             const months = Math.floor(days / 30.44); 
 
             const container = document.getElementById('counter');
@@ -405,7 +401,6 @@
 
         // 4. Celebración Final y Modal
         function acceptLove() {
-            // Confetti primero
             const end = Date.now() + 4 * 1000;
             const colors = ['#e11d48', '#ffffff'];
 
@@ -430,7 +425,6 @@
                 }
             }());
 
-            // Mostrar el Modal de Sushito con un pequeño retraso
             setTimeout(() => {
                 const modal = document.getElementById('ticketModal');
                 modal.classList.remove('hidden');
