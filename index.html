@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Michell Abigail - 6 Meses</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Fuentes: Una elegante para leer, una manual para títulos, una retro para el código -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=VT323&display=swap" rel="stylesheet">
+    <!-- Librería de Animaciones al hacer scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <style>
+        /* Estilos Base */
+        body {
+            font-family: 'Playfair Display', serif;
+            overflow-x: hidden;
+            background-color: #fafaf9; /* Stone-50 */
+            color: #1c1917; /* Stone-900 */
+        }
+        .handwritten {
+            font-family: 'Dancing Script', cursive;
+        }
+        .retro-font {
+            font-family: 'VT323', monospace;
+        }
+        
+        /* Efecto Polaroid Mejorado */
+        .polaroid {
+            background: #fff;
+            padding: 12px 12px 40px 12px;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            transition: all 0.4s ease;
+            position: relative;
+        }
+        .polaroid:hover {
+            transform: scale(1.02) rotate(0deg) !important;
+            z-index: 20;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2);
+        }
+        .polaroid img {
+            width: 100%;
+            height: auto;
+            border-bottom: 1px solid #f3f4f6;
+        }
+
+        /* Fondo de Estrellas (CSS Puro) */
+        .starry-bg {
+            background-color: #050505;
+            background-image: 
+                radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 3px),
+                radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 2px),
+                radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 3px);
+            background-size: 550px 550px, 350px 350px, 250px 250px;
+            background-position: 0 0, 40px 60px, 130px 270px;
+            animation: star-move 100s linear infinite;
+        }
+        @keyframes star-move {
+            from { background-position: 0 0, 40px 60px, 130px 270px; }
+            to { background-position: 550px 550px, 390px 410px, 380px 520px; }
+        }
+
+        /* Cursor parpadeante terminal */
+        .cursor {
+            display: inline-block;
+            width: 10px;
+            background-color: #4ade80; /* Green-400 */
+            animation: blink 1s infinite;
+        }
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+
+        /* Utilidad para justificar texto bonito */
+        .text-reading {
+            text-align: justify;
+            text-justify: inter-word;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- PORTADA: BIENVENIDA -->
+    <section class="min-h-screen flex flex-col justify-center items-center text-center p-6 bg-[#fdfbf7] relative">
+        <div data-aos="fade-down" data-aos-duration="1500" class="mb-4">
+            <h2 class="text-xl md:text-2xl text-stone-500 uppercase tracking-[0.2em] mb-4">Para mi amada</h2>
+            <h1 class="text-5xl md:text-7xl handwritten text-rose-700 mb-6 drop-shadow-sm">Michell Abigail<br>Morales Ordoñez</h1>
+            
+            <div class="w-24 h-1 bg-rose-300 mx-auto my-6"></div>
+            
+            <p class="max-w-xl mx-auto text-lg md:text-xl text-stone-600 italic leading-relaxed mb-8">
+                "Felices 6 meses, mi vida. Sé que las palabras a veces me faltan, pero hoy quiero intentar que sobren."
+            </p>
+
+            <!-- REPRODUCTOR DE YOUTUBE (PARA ESCUCHAR LA CANCIÓN COMPLETA) -->
+            <div class="w-full max-w-sm mx-auto shadow-2xl rounded-xl overflow-hidden transform hover:scale-105 transition duration-300 bg-black">
+                <iframe width="100%" height="200" src="https://www.youtube.com/embed/Db27qvNShUc" title="Apocalypse - Cigarettes After Sex" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <p class="text-xs text-stone-400 mt-2">(Dale play para la experiencia completa)</p>
+        </div>
+        
+        <div class="absolute bottom-4 animate-bounce text-stone-400">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+        </div>
+    </section>
+
+    <!-- CAPÍTULO 1: LA CERTEZA -->
+    <section class="min-h-screen flex flex-col lg:flex-row items-center justify-center p-8 lg:p-20 bg-white">
+        <!-- Texto -->
+        <div class="lg:w-1/2 lg:pr-12 order-2 lg:order-1" data-aos="fade-right">
+            <h3 class="text-3xl md:text-4xl handwritten text-stone-800 mb-6">1. La verdad tras mi risa</h3>
+            <div class="text-reading text-lg text-stone-600 leading-loose space-y-4">
+                <p>
+                    A veces bromeas, con esa chispa tuya, diciendo que "tengo a otra". Yo solo sonrío. Me preguntas por qué me río, sin saber que mi risa nace de una verdad absoluta que guardo en el pecho: <strong class="text-rose-600">desde el día en que aprendí a mirarte realmente, el mundo se quedó sin espacio para nadie más.</strong>
+                </p>
+                <p>
+                    No existe "otra" cuando tu nombre es lo único que resuena en mis silencios. Tu ausencia pesa como el aire que me falta y tu presencia es el único lugar donde encuentro calma. Tú no lo sabes, Michell, pero eres mi certeza en medio de todo este ruido. Eres la razón de mis pasos firmes y el motivo del hombre que, gracias a ti, estoy aprendiendo a ser.
+                </p>
+            </div>
+        </div>
+        
+        <!-- Galería Visual -->
+        <div class="lg:w-1/2 order-1 lg:order-2 relative h-[400px] w-full mb-10 lg:mb-0" data-aos="fade-left">
+            <!-- FOTO 1: Nosotros (Actualizada) -->
+            <div class="polaroid absolute top-0 left-10 rotate-[-6deg] z-10 w-64">
+                <img src="https://lh3.googleusercontent.com/pw/AP1GczPMHFI9fC2_NGHxFKraB2Mk9HHEm8C78Qlj5n0Vic5ahwKg1LAgpA6-OH0klyxepNXcLbkiNuwxwBNXKTfYbAxZhwGIp6t4ZYSG90nptzW7TCjuFFDznxcUrUzMxISv4t8t8Y8CCOZZ5Tl2nYupGTG_zQ=w1873-h875-s-no-gm?authuser=0" alt="Nosotros">
+                <p class="handwritten text-center text-xl mt-3 text-gray-500">Mi única certeza</p>
+                <p class="text-[10px] text-center mt-2 text-stone-400 italic leading-tight">
+                    14 de junio 2025, 6:42<br>
+                    Todavía no imaginaba lo mucho que te podía llegar a amar...
+                </p>
+            </div>
+            <!-- FOTO 2: Tu sonrisa -->
+            <div class="polaroid absolute top-12 right-10 rotate-[4deg] z-0 w-60">
+                <img src="https://lh3.googleusercontent.com/pw/AP1GczOj1JaFD3FMOCWaJg2Fnp9Dn1Ksw3hy27uLo1ZLr4oISkufvgkLCv1QXo0xvcRTTCinRB6YvDuMKOYhv0p5je5dBDQIyHQFjc8VULTulnu_yLNXtUKt6twY1qmaMqRGNiZrBkKYiMmEEnpuqIjkOS00rw=w518-h920-s-no-gm?authuser=0" alt="Tu sonrisa">
+                <p class="handwritten text-center text-xl mt-3 text-gray-500">Tu sonrisa</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CAPÍTULO 2: EL REFUGIO -->
+    <section class="min-h-screen bg-stone-100 flex flex-col items-center justify-center p-8 py-20">
+        <div class="max-w-3xl text-center" data-aos="zoom-in">
+            <h3 class="text-3xl md:text-5xl handwritten text-stone-800 mb-8">Si tú quisieras...</h3>
+            
+            <p class="text-xl text-stone-600 mb-8 italic">
+                "Te pienso incluso cuando intento no hacerlo. En cada pausa del viento, tu ausencia me recuerda que siempre quiero más de ti, y ese 'más' me asusta."
+            </p>
+
+            <div class="bg-white p-8 md:p-12 shadow-xl rounded-sm border-l-4 border-rose-400 text-reading">
+                <p class="text-lg leading-relaxed text-stone-700">
+                    Sé que a veces el mundo te pesa, Michell. Sé que hay rincones de tu alma a los que ni yo he llegado. Pero quiero que sepas esto: <strong>Si tú quisieras, yo sería tu abrigo.</strong> Sería tierra firme para tus pasos cuando duden. Sería refugio en tus días grises.
+                </p>
+                <br>
+                <p class="text-lg leading-relaxed text-stone-700">
+                    No estoy aquí para detenerte ni para exigirte amor, sino para recordarte que, pase lo que pase, fuiste y eres esa parte de mí que ni el tiempo ni el adiós podrían borrar. Aquí estaré, siempre, como un puerto seguro para ti.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CAPÍTULO 3: TERMINAL DEL AMOR (ASCII MEJORADO) -->
+    <section class="h-screen w-full bg-[#000020] flex flex-col items-center justify-center relative overflow-hidden retro-font">
+        <!-- Overlay de scanlines -->
+        <div class="absolute inset-0 z-10 pointer-events-none opacity-20" style="background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06)); background-size: 100% 2px, 3px 100%;"></div>
+        
+        <div class="z-20 text-blue-200 text-center p-4">
+            <p class="mb-4 text-xs md:text-sm text-blue-400">BIOS DATE: 08-08-2025 | SYSTEM: HEART_CORE_V6</p>
+            
+            <!-- ASCII ART DEL TULIPÁN -->
+            <pre class="text-[10px] md:text-sm leading-none font-bold text-pink-400 mb-8 drop-shadow-[0_0_10px_rgba(236,72,153,0.8)]" data-aos="fade-up">
+       ,
+    ,  ,:
+   ,;.,' .
+  ,:".; ;.     (Para ti, mi flor)
+ ,;'.',;:
+ :;.,';'
+  ';,;:
+   ;:;
+   :;:
+   :;:
+   :;:
+   :;:
+ ,:;::;.
+            </pre>
+
+            <div class="text-xl md:text-3xl text-left border-2 border-blue-800 p-6 bg-blue-900/30 w-full max-w-2xl mx-auto rounded shadow-[0_0_20px_rgba(30,58,138,0.5)]">
+                <span class="text-green-400">michael@heart</span>:<span class="text-blue-400">~</span>$ <span id="typewriter"></span><span class="cursor">&nbsp;</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- CAPÍTULO 4: CRECIMIENTO -->
+    <section class="min-h-screen flex flex-col md:flex-row items-center justify-between p-8 lg:p-24 bg-[#f0fdf4]"> <!-- Verde muy suave -->
+        <div class="md:w-1/2 mb-10 md:mb-0" data-aos="fade-right">
+            <!-- Foto Grande -->
+            <div class="polaroid rotate-2 w-full max-w-md mx-auto">
+                <img src="https://lh3.googleusercontent.com/pw/AP1GczO2qTQER8LSEOAfn6j-M0TIpHbCpWF5Jn2KHnYvMUotYUvfL2gQqOK1dmCxmOviU-uplfy1oLU_tiBKK0s1eGhxYdrUaqoflzTX7AEkYUmObj2s_i0qEvHyCE9GbiOLhypMeTWYdckgRO1aGxlDWwQcXA=w1223-h920-s-no-gm?authuser=0" alt="Momentos de paz">
+                <p class="handwritten text-center text-2xl mt-4">Nuestro proceso</p>
+            </div>
+        </div>
+        
+        <div class="md:w-1/2 md:pl-12" data-aos="fade-left">
+            <h3 class="text-4xl handwritten text-emerald-800 mb-6">Paciencia y Propósito</h3>
+            <blockquote class="text-xl text-stone-600 italic border-l-4 border-emerald-400 pl-4 mb-6">
+                "Hay que saber tener paciencia cuando te estás convirtiendo en alguien que nunca antes has sido."
+            </blockquote>
+            <p class="text-lg text-reading text-stone-700">
+                Contigo descubrí cómo se sentía ese pequeño momento de claridad. Ese instante donde supe qué hacer con mi vida y por fin sentí un propósito por el cual vivir. Tú no solo eres mi novia, eres el catalizador de mi mejor versión.
+            </p>
+        </div>
+    </section>
+
+    <!-- CAPÍTULO 5: FUTURO PERFECTO -->
+    <section class="py-24 bg-white flex flex-col items-center justify-center text-center px-6">
+        <div data-aos="fade-up">
+            <h2 class="text-sm tracking-[0.3em] text-stone-400 uppercase mb-8">Visualizando</h2>
+            <div class="text-2xl md:text-4xl font-serif text-stone-800 leading-normal space-y-2">
+                <p>Me imagino llegando a casa,</p>
+                <p>siendo recibido por tus labios,</p>
+                <p>entonces compartimos el pan</p>
+                <p class="font-bold text-rose-700">y más tarde la cama.</p>
+            </div>
+            <div class="mt-8">
+                <p class="handwritten text-3xl text-stone-500">Qué futuro tan perfecto.</p>
+            </div>
+
+            <!-- Imagen agregada: Futuro Perfecto -->
+            <div class="mt-10 flex justify-center">
+                <div class="polaroid rotate-1 w-64 md:w-80 transform hover:scale-105 transition duration-500">
+                    <img src="https://i.pinimg.com/originals/19/84/83/198483298cb6f10adb884e6de461f797.jpg" alt="Nuestro Futuro">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CAPÍTULO 6: CONSTELACIONES (Fondo Estrellas) -->
+    <section class="min-h-screen w-full starry-bg flex flex-col items-center justify-center text-white relative px-4">
+        
+        <div class="z-10 max-w-2xl text-center" data-aos="zoom-in-up" data-aos-duration="2000">
+            <h2 class="text-5xl md:text-7xl handwritten text-yellow-100 mb-10 drop-shadow-[0_0_15px_rgba(255,255,200,0.5)]">Mis Constelaciones</h2>
+            
+            <p class="text-xl md:text-3xl font-light leading-relaxed tracking-wide text-gray-200">
+                Pensé que mis constelaciones favoritas estaban en el cielo...
+            </p>
+            <div class="h-8"></div>
+            <p class="text-2xl md:text-4xl font-semibold text-yellow-200 transform hover:scale-105 transition duration-500 cursor-default">
+                Hasta que vi tus hermosos lunares.
+            </p>
+            
+            <!-- Espacio para foto de ella si la tienes, o simplemente el texto -->
+            <div class="mt-12 flex justify-center">
+                 <!-- AUMENTADO: De w-48 a w-72 (móvil) y w-96 (PC) -->
+                 <div class="polaroid rotate-3 w-72 md:w-96 opacity-90 hover:opacity-100 transition duration-500 hover:scale-105">
+                     <!-- Pon una foto de ella aquí -->
+                    <img src="https://lh3.googleusercontent.com/pw/AP1GczO_ed5_Qk0Njk5eW-7v-Mm5Rnu3nV6mJDJJMAY5erS3Acln53tvZI0jGPxoiWmkInIdICXxBVmhACkNkp0-5I0QsAJZ70tKJem6nkA8NXdJJ0XI8f1xmT38N7X-KOqj0oS4WObR1HYhdVW_cIP7JXBroQ=w1223-h920-s-no-gm?authuser=0" alt="Mi universo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FINAL: EL CONTADOR Y LA PREGUNTA -->
+    <section class="min-h-screen bg-rose-50 flex flex-col items-center justify-center p-6 text-center relative z-0">
+        
+        <!-- Mensaje Final -->
+        <div class="max-w-3xl mb-16" data-aos="fade-up">
+            <h2 class="text-3xl md:text-4xl font-serif text-stone-800 mb-6">Acepto todo de ti</h2>
+            <p class="text-lg md:text-xl text-stone-600 leading-relaxed">
+                No necesito que siempre estés feliz ni que seas perfecta, Michell. Me enamoré de ti sabiendo que <span class="text-rose-600 font-bold">a veces eres fuego y a veces eres lágrimas</span>. Y aquí sigo, y aquí seguiré, eligiendo tu lealtad y tu locura todos los días de mi vida.
+            </p>
+        </div>
+
+        <!-- CONTADOR DE TIEMPO -->
+        <div class="bg-white px-6 py-8 md:px-12 md:py-10 rounded-2xl shadow-2xl mb-16 transform hover:-translate-y-2 transition duration-300 border border-rose-100" data-aos="fade-up" data-aos-delay="100">
+            <p class="text-stone-400 uppercase tracking-widest text-xs mb-6">Tiempo amándote desde el 8 de Agosto de 2025</p>
+            
+            <div id="counter" class="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-12 retro-font text-stone-800">
+                <!-- Se llena con JS -->
+            </div>
+        </div>
+
+        <!-- LA GRAN PREGUNTA -->
+        <div data-aos="zoom-in" data-aos-delay="300" class="relative z-10">
+            <h1 class="text-4xl md:text-6xl handwritten text-rose-600 mb-8 animate-pulse">¿Quieres ser mi San Valentín?</h1>
+            
+            <button onclick="acceptLove()" class="group relative px-10 py-4 bg-rose-600 text-white rounded-full text-xl font-bold hover:bg-rose-700 transition shadow-lg overflow-hidden">
+                <span class="relative z-10">¡SÍ, ACEPTO! ❤️</span>
+                <div class="absolute inset-0 h-full w-full scale-0 rounded-full transition-all duration-300 group-hover:scale-100 group-hover:bg-rose-500/50"></div>
+            </button>
+        </div>
+
+        <!-- FIRMA FINAL -->
+        <footer class="mt-24 pb-12 text-center">
+            <p class="text-stone-500 text-sm font-serif mb-4 tracking-widest uppercase">Con mucho atento amor</p>
+            <h3 class="text-3xl md:text-4xl handwritten text-rose-800 mb-2">Michael Adael Salvador Cocom</h3>
+            <div class="w-16 h-1 bg-rose-200 mx-auto rounded-full"></div>
+        </footer>
+    </section>
+
+    <!-- MODAL TICKET (Oculto por defecto) -->
+    <div id="ticketModal" class="fixed inset-0 bg-black/90 hidden z-50 flex-col items-center justify-center p-4 backdrop-blur-sm transition-opacity duration-300">
+        <div class="bg-amber-50 w-full max-w-md p-8 rounded-lg shadow-2xl border-4 border-dashed border-rose-500 relative transform scale-100" data-aos="zoom-in">
+            <!-- Elementos decorativos del ticket -->
+            <div class="absolute -top-6 -left-6 text-6xl transform -rotate-12">🍣</div>
+            <div class="absolute -bottom-6 -right-6 text-6xl transform rotate-12">🍱</div>
+            
+            <div class="text-center relative z-10">
+                <h2 class="text-2xl font-bold text-stone-800 uppercase tracking-widest mb-2">TICKET DE AMOR</h2>
+                <div class="h-1 w-full bg-stone-300 my-4"></div>
+                <h3 class="text-4xl handwritten text-rose-600 mb-4">Vale por:</h3>
+                <p class="text-2xl font-serif text-stone-800 font-bold mb-6">¡Una Cita de Sushito!</p>
+                <p class="text-stone-500 italic mb-8 text-sm">Válido exclusivamente para la hermosa Michell Abigail.</p>
+                
+                <div class="border-2 border-stone-800 px-4 py-2 inline-block rounded font-mono text-xs md:text-sm mb-6 bg-white">
+                    CÓDIGO: LOVE-6-MESES
+                </div>
+                
+                <button onclick="closeModal()" class="block w-full bg-rose-600 text-white font-bold py-3 rounded-lg hover:bg-rose-700 transition shadow-md">
+                    ¡CANJEAR AHORA! 😍
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Confetti Script -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+    <script>
+        // 1. Inicializar animaciones de scroll
+        AOS.init({
+            duration: 1200,
+            once: false,
+            mirror: true
+        });
+
+        // 2. Efecto de escritura en la terminal (Typewriter)
+        const textToType = "sudo love --forever --target='Michell Abigail'";
+        const typeWriterElement = document.getElementById('typewriter');
+        let i = 0;
+
+        function typeWriter() {
+            if (i < textToType.length) {
+                typeWriterElement.innerHTML += textToType.charAt(i);
+                i++;
+                setTimeout(typeWriter, 100);
+            }
+        }
+        
+        // Iniciar el efecto cuando el usuario llegue a esa sección (simulado con intersection observer o timeout simple)
+        // Para simplificar, lo iniciamos a los 2 segundos de carga o podrías usar un evento de scroll
+        setTimeout(typeWriter, 2000);
+
+
+        // 3. Contador de Tiempo Exacto
+        // Fecha de inicio: 8 de Agosto 2025
+        const startDate = new Date('2025-08-08T00:00:00');
+
+        function updateCounter() {
+            const now = new Date();
+            const diff = now - startDate;
+
+            if (diff < 0) {
+                document.getElementById('counter').innerHTML = "Esperando al 8 de agosto de 2025...";
+                return;
+            }
+
+            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+            
+            // Calculo simple de meses (aproximación)
+            const months = Math.floor(days / 30.44); 
+
+            const container = document.getElementById('counter');
+            
+            const itemClass = "flex flex-col items-center justify-center p-2";
+            const numberClass = "text-4xl md:text-5xl font-bold text-rose-600";
+            const labelClass = "text-sm md:text-base text-stone-500 mt-2";
+
+            container.innerHTML = `
+                <div class="${itemClass}">
+                    <span class="${numberClass}">${months}</span>
+                    <span class="${labelClass}">Meses</span>
+                </div>
+                <div class="${itemClass}">
+                    <span class="${numberClass}">${days}</span>
+                    <span class="${labelClass}">Días Totales</span>
+                </div>
+                <div class="${itemClass}">
+                    <span class="${numberClass}">${hours}</span>
+                    <span class="${labelClass}">Horas</span>
+                </div>
+                <div class="${itemClass}">
+                    <span class="${numberClass}">${minutes}:${seconds < 10 ? '0'+seconds : seconds}</span>
+                    <span class="${labelClass}">Minutos</span>
+                </div>
+            `;
+        }
+        setInterval(updateCounter, 1000);
+        updateCounter();
+
+        // 4. Celebración Final y Modal
+        function acceptLove() {
+            // Confetti primero
+            const end = Date.now() + 4 * 1000;
+            const colors = ['#e11d48', '#ffffff'];
+
+            (function frame() {
+                confetti({
+                    particleCount: 5,
+                    angle: 60,
+                    spread: 55,
+                    origin: { x: 0 },
+                    colors: colors
+                });
+                confetti({
+                    particleCount: 5,
+                    angle: 120,
+                    spread: 55,
+                    origin: { x: 1 },
+                    colors: colors
+                });
+
+                if (Date.now() < end) {
+                    requestAnimationFrame(frame);
+                }
+            }());
+
+            // Mostrar el Modal de Sushito con un pequeño retraso
+            setTimeout(() => {
+                const modal = document.getElementById('ticketModal');
+                modal.classList.remove('hidden');
+                modal.classList.add('flex');
+            }, 1000);
+        }
+
+        // 5. Cerrar Modal
+        function closeModal() {
+            const modal = document.getElementById('ticketModal');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+            alert("¡Guardado! Te debo ese sushi ❤️");
+        }
+    </script>
+</body>
+</html>
